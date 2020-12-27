@@ -19,10 +19,11 @@ javascript_import do
 end
 
 style_file = File.join('frontend', 'styles', 'index.scss')
-insert_into_file(style_file, <<~CSS
+css_vars = <<~CSS
   \n
-  //--swiper-pagination-color: theme('colors.primary.600');
-  //--swiper-navigation-color: theme('colors.primary.600');
-  //--swiper-theme-color: white;
+  //--swiper-pagination-color: ;
+  //--swiper-navigation-color: ;
+  //--swiper-theme-color: ;
+CSS
 
-CSS, after: /body\s*{/)
+insert_into_file(style_file, css_vars, after: /body\s*{/)
