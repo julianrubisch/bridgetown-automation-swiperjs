@@ -20,10 +20,9 @@ end
 
 style_file = File.join('frontend', 'styles', 'index.scss')
 css_vars = <<~CSS
-  \n
   //--swiper-pagination-color: ;
   //--swiper-navigation-color: ;
   //--swiper-theme-color: ;
 CSS
 
-insert_into_file(style_file, css_vars, after: /body\s*{/)
+insert_into_file(style_file, "\n#{css_vars}", after: /body\s*{/)
