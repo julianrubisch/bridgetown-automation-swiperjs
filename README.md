@@ -29,14 +29,14 @@ This project requires the `apply` command introduced in Bridgetown version
 ### New project
 
 ```bash
-bridgetown new <newsite> --apply="https://github.com/julianrubisch/bridgetown-automation-swiper"
+bridgetown new <newsite> --apply="https://github.com/julianrubisch/bridgetown-automation-swiperjs"
 ```
 
 ### Existing Project
 
 ```bash
 cd <bridgetown-site>
-[bundle exec] bridgetown apply "https://github.com/julianrubisch/bridgetown-automation-swiper"
+[bundle exec] bridgetown apply "https://github.com/julianrubisch/bridgetown-automation-swiperjs"
 ```
 
 ## Getting Started
